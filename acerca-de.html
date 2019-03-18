@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Sobre la revista / Sobre a revista | Revista Latinoamericana de Estudiantes de Geografía</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- favicon -->
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <!-- css -->
+  <link  rel="stylesheet" href="releg.css">
+  <!-- iconos redes sociales -->
+  <script src="https://use.fontawesome.com/690be581ea.js"></script>
+  <!-- mapas -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+  <script type="text/javascript" src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+  <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
+</head>
+<body>
+<!-- Navegación -->
+<nav>
+  <a class="fa fa-home" href="/"></a> 
+  <a class="active" href="acerca-de.html">Acerca de / Sobre</a>
+  <a href="archivo.html">Archivo / Arquivo</a>
+</nav>
+<!-- Acerca de -->
+<div class="acerca">
+  <h1>RELEG: Revista latinoamericana de estudiantes de geografia</h1>
+  <h2>Sobre la revista<br> <span class="pt">Sobre a revista</span></em></h2>
+    <p>La RELEG es un proyecto editorial estudiantil con amplia trayectoria. Surge como iniciativa a partir de la necesidad de difundir las ideas que estudiantes vierten en los encuentros con geógrafos de todo el continente cada dos años (Encuentro Latinoamericano de Estudiantes de Geografía, el último se realizó recientemente en Asunción, Paraguay).</p>
+    <p>La RELEG, revista de difusión de artículos y estudios geográficos, es patrocinada y editada por estudiantes y docentes de varios países latinoamericanos. Su Comisión Editorial está formada por estudiantes de diversas instituciones públicas y privadas que cuentan con reconocida calidad académica.</p>
+    <p>La revista tiene por objetivo difundir y motivar la producción de literatura geográfica, para fomentar entre los estudiantes la producción y difusión de conocimiento disciplinar producido en América Latina a través de un medio divulgación. Se pretende aportar a la formación profesional de los estudiantes de geografía, estimular su espíritu crítico, propiciar procesos reflexivos y sobre todo, alentar la investigación en ámbitos geográficos.</p>
+    <p>La misión de la RELEG es la de ser una herramienta de comunicación y difusión de las líneas de investigación, tendencias e innovaciones del acontecer de la disciplina en América Latina, partiendo de un carácter crítico, analítico y veraz.</p>
+</div>
+<!-- Comité editorial -->
+<section class="comite">
+  <h2>Comité editorial<br> <span class="pt">Comitê editorial</span></h2>
+  <div class="row">
+  <div class="column">
+    <p><strong>Jonas Ariel Cantaluppi de Souza</strong><br> <em>Universidade Federal da Grande Dourados</em></p>
+    <p><strong>Valeria C. de Pina Ravest</strong><br> <em>Universidad Nacional Autónoma de México</em></p>
+  </div>
+  <div class="column">
+    <p><strong>Tamara Puchi Quinchel</strong><br> <em>Universidad Austral de Chile</em></p>
+    <p><strong>Natalia Pozo Morales</strong><br> <em>Pontificia Universidad Católica de Chile </em></p>
+  </div>
+  </div>
+  <div class="row">
+  <div class="column">
+    <p><strong>Martha Evelyn Tito Chavez</strong><br> <em>Universidad Mayor de San Andrés</em></p>
+  </div>
+ </div> 
+</section>
+<section class="mapa">
+  <h2>Escuelas y Grupos de investigación en la región</h2>
+  <div id="map"></div>
+  <script type='text/javascript' src='otras-geografias.json'></script>
+  <script type='text/javascript'>
+  // See post: http://asmaloney.com/2014/01/code/creating-an-interactive-map-with-leaflet-and-openstreetmap/
+  var map = L.map( 'map', {
+    center: [-8, -70],
+    minZoom: 2,
+    zoom: 2.5
+  })
+
+  L.tileLayer( 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    subdomains: ['a', 'b', 'c']
+  }).addTo( map )
+
+  for ( var i=0; i < markers.length; ++i ) 
+  {
+     L.marker( [markers[i].lat, markers[i].lng] )
+        .bindPopup( '<a href="' + markers[i].url + '" target="_blank">' + markers[i].name + '</a>' )
+        .addTo( map );
+  }
+  </script>
+</section>
+<!-- Footer -->
+<footer class="text-center">
+  <p>Los contenidos de la RELEG, salvo se indique lo contrario, están bajo una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.es" target="_blank">licencia Creative Commons Reconocimiento 4.0 Internacional</a>.<br> O conteúdo do RELEG, salvo indicação em contrário, está sujeito a um <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.pt_BR" target="_blank">licença Creative Commons Atribuição 4.0 Internacional</a>.<br> ISSN 0718–770X</p>
+  <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Contenido Open Access" src="img/open-access.svg"></a> <a href="https://validator.w3.org/check/referer" target="_blank"><img src="img/w3c-html5.svg" alt="¡HTML5 Válido!"></a> <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank"><img src="img/w3c-css.svg" alt="¡CSS Válido!"></a></p> 
+  <a class="fa fa-facebook fa-lg" href="https://facebook.com/revista.releg" target="_blank"></a> <a class="fa fa-twitter fa-lg" href="https://twitter.com/revista_releg" target="_blank"></a> <a class="fa fa-github fa-lg" href="https://github.com/releg" target="_blank"></a>
+</footer>
+</body>
+</html>
