@@ -1,0 +1,49 @@
+/* reset browser options */
+@import url('https://necolas.github.io/normalize.css/7.0.0/normalize.css');
+/* tipografias */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+/* general */
+* { box-sizing:border-box }
+html { font-family:'Noto Serif', serif; color:#515151; background-color:#fff; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100% }
+/* navegación */
+nav { overflow:hidden; background-color:#e9e9e9; font-family:'Noto Sans', sans-serif }
+nav a { float:left; display:block; color:black; text-align:center; padding:8px 8px; text-decoration:none; font-size:12px }
+nav a:hover { background-color:#ddd; color:black }
+nav a.active { background-color:#9bc43f; color:white }
+@media screen and (max-width: 600px) {
+  nav a { float:none; display:block; text-align:left; width:100%; margin:0; padding:14px } }
+/* cuerpo */
+header { padding-top:1rem; padding-bottom: .5rem; text-align: center }
+h1, h2, h3 { font-family:'Noto Sans', sans-serif; color:#161718; font-weight:700 }
+strong { color:#303030 }
+hr.pt { border-top:1px dashed #8c8b8b; border-bottom: 1px dashed #fff }
+.pt {color:#696969}
+a { color:#161718; text-decoration:none }
+a:hover { color:#777; text-decoration:none } 
+.descripcion, .convocatoria, .presentacion, .volumen, .archivo, .articulo, .acerca, .comite, .eventos, .mapa h2 { position:relative; width:80%; max-width:900px; margin:2rem auto; word-wrap:break-word;  }
+.descripcion { font-size:1.3rem; text-align:center; font-style: italic; line-height:1.3; margin-top:0; margin-bottom:1rem }
+.articulo p, .convocatoria p, .presentacion p, .acerca p, .comite p { font-size:1rem; text-align:justify; line-height:1.3; margin-top:0; margin-bottom:1rem }
+.convocatoria h2, .presentacion h2, .volumen h2, .archivo h2, .articulo h2, .acerca h2, .comite h2, .eventos h2, .mapa h2 { font-size:1.7rem; margin-top: 1rem; margin-bottom:.5rem; text-align:center; line-height:1.25; border-top:1px solid #006A34; padding-top:1rem }
+.convocatoria {text-align: center;}
+.archivo { margin-bottom:13rem }
+.buscar { text-align:center }
+.volumen h3 { font-size:1.4rem }
+.volumen p { font-size:1rem; text-align:justify; margin-bottom:.1rem }
+span.sumTitulo { display:block; max-width:85%; font-weight:bold; color:#303030 }
+span.sumAutor { display:block; max-width:75%; padding-left:1rem }
+span.sumPDF, span.sumPaginas { float:right }
+.row { display:flex; flex-wrap:wrap; padding:0 4px }
+.column { 
+  
+  flex: 50%;
+  padding: 0 4px;
+}
+.column p { text-align:center }
+#map { height:440px; border:1px solid #AAA }
+/* colofón */
+footer { border-top:1px solid #006A34; background-color:#9bc43f; font-family:'Noto Sans', sans-serif; color:#f5f5f5; padding:.5rem; font-size:14px; text-align:center }
+footer a { color:#f5f5f5 }
+footer p { max-width: 900px; margin: 2rem auto; }
+
+

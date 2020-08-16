@@ -1,0 +1,58 @@
+markers = [
+  // Escuelas de geografía en la región
+  {
+    "name": "Universidad Austral de Chile. Valdivia, Chile",
+    "url": "http://sitiosciencias.uach.cl/escuelageografia/",
+    "lat": -39.8062742,
+    "lng": -73.2507004
+  },
+    {
+    "name": "Universidad Alberto Hurtado. Santiago, Chile",
+    "url": "http://geografia.uahurtado.cl",
+    "lat": -33.4512248,
+    "lng": -70.6536265
+  },
+  // Grupos de investigación en la región
+  {
+    "name": "Colectivo de Geogafía Critica Gladys Armijo. Chile",
+    "url": "http://geografiacritica.cl",
+    "lat": -33.4380036,
+    "lng": -70.6511597
+   },
+  {
+    "name": "Estudiantes de Geografía Zonal Sur. Chile",
+    "url": "https://facebook.com/zonalsurgeo",
+    "lat": -39.8140682,
+    "lng": -73.2480679
+   },
+  {
+    "name": "Red Colombiana de Estudiantes de Geografía",
+    "url": "https://facebook.com/red.c.de",
+    "lat": 4.5981259,
+    "lng": -74.0782322
+   },
+  {
+    "name": "Red de Geografía Crítica de Raíz Latinoamericana",
+    "url": "http://georaizal.com",
+    "lat": 0.2186111,
+    "lng": -78.5097222
+  },
+  {
+    "name": "Asociación de Estudiantes de Geografía UCR",
+    "url": "https://facebook.com/ucr.asege",
+    "lat": 9.9333333,
+    "lng": -84.0833333
+  },
+  {
+    "name": "Colectivo Puertorriqueño de Geografía",
+    "url": "https://facebook.com/geografiapr",
+    "lat": 18.4500000,
+    "lng": -66.0666666
+   },
+  {
+    "name": "Geogafía Critica Ecuador",
+    "url": "https://facebook.com/geografiacritica.ecuador",
+    "lat": 0.2186111,
+    "lng": -78.5097222
+   }
+];    
