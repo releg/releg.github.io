@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Comitê Editorial | Revista Latinoamericana de Estudiantes de Geografía</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- favicon -->
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <!-- css -->
+  <link  rel="stylesheet" href="releg.css">
+  <!-- iconos redes sociales -->
+  <script src="https://use.fontawesome.com/690be581ea.js"></script>
+  <!-- mapas -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+  <script type="text/javascript" src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+  <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
+</head>
+<body>
+<!-- Navegación -->
+<nav>
+  <a class="active fa fa-home" href="index-pt.html"></a> 
+  <a href="presentacion-pt.html">Apresentação</a>
+  <a href="numero-actual-pt.html">Número atual</a>
+  <a href="archivo-pt.html">Arquivo</a>
+  <a href="convocatorias-pt.html">Convocações</a>
+  <a href="comite-editorial-pt.html">Comitê Editorial</a>
+  <a href="normas-editoriales-pt.html">Regras editoriais</a>
+  <a href="historia-y-estadisticas-pt.html">História e estatísticas</a>
+  <a href="presentaciones-pt.html">Apresentações</a>
+  <a href="contacto-pt.html">Contato</a>
+  <!-- <a href="javascript:void(0)">Otras geografías</a> -->
+  <a class="topnav-right" href="comite-editorial.html">Español</a>
+</nav>
+
+<!-- Comité editorial -->
+<section class="comite">
+  <h2>Comitê Editorial</h2>
+  <div class="row">
+  <div class="column">
+    <p><strong>Jonas Ariel Cantaluppi de Souza</strong><br> <em>Universidade Federal da Grande Dourados</em> <br> Brasil</p>
+    <p><strong>Valeria Consuelo de Pina Ravest</strong><br> <em>Universidad Nacional Autónoma de México</em> <br> México</p>
+    <p><strong>Jasson Mora Mussio</strong><br> <em>Universidad de Costa Rica</em> <br> Costa Rica</p>
+    
+  </div>
+  <div class="column">
+    <p><strong>César Antonio Cázarez Vázquez</strong><br> <em>Universidad Nacional Autónoma México</em> <br>México</p>
+    <p><strong>Bruno Gonçalves Pereira</strong><br> <em>Universidad Federal de Ceará</em> <br>Brasil</p>
+    <p><strong>Natalia Pozo Morales</strong><br> <em>Pontificia Universidad Católica de Chile</em> <br>Chile</p>
+  </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <p><strong>Tamara Puchi Quinchel</strong><br> <em>Universidad Austral de Chile</em> <br> Chile</p>
+    </div>
+  </div> 
+
+ <h2>Comunicação e Divulgação<br> </h2>
+ <div class="row">
+    <div class="column">
+      <p><strong>César Antonio Cázarez Vázquez</strong><br> <em>Universidad Nacional Autónoma México</em> <br> México</p>
+    </div>
+ </div>
+
+ <h2>Desenho web<br> </h2>
+ <div class="row">
+    <div class="column">
+      <p><strong>Iván Martínez Zazueta</strong><br> <em>Universidad Nacional Autónoma México</em> <br> México</p>
+    </div>
+ </div>
+
+ <h2>Desenho Editorial No. 7<br> </h2>
+ <div class="row">
+    <div class="column">
+      <p><strong>Valeria Consuelo de Pina Ravest</strong><br> <em>Universidad Nacional Autónoma México</em> <br> México</p>
+    </div>
+ </div>
+ <h2>Capa e contracapa<br> </h2>
+ <div class="row">
+    <div class="column">
+      <p><strong>Valeria Consuelo de Pina Ravest</strong><br> Intervenção-colagem com imagens de Stanley Kaplan e Rini Templeton.</p>
+    </div>
+ </div>
+
+</section>
+
+<section class="mapa">
+  <h2>Escolas e grupos de pesquisa da região</h2>
+  <div id="map"></div>
+  <script type='text/javascript' src='otras-geografias.json'></script>
+  <script type='text/javascript'>
+  // See post: http://asmaloney.com/2014/01/code/creating-an-interactive-map-with-leaflet-and-openstreetmap/
+  var map = L.map( 'map', {
+    center: [-8, -70],
+    minZoom: 2,
+    zoom: 2.5
+  })
+
+  L.tileLayer( 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    subdomains: ['a', 'b', 'c']
+  }).addTo( map )
+
+  for ( var i=0; i < markers.length; ++i ) 
+  {
+     L.marker( [markers[i].lat, markers[i].lng] )
+        .bindPopup( '<a href="' + markers[i].url + '" target="_blank">' + markers[i].name + '</a>' )
+        .addTo( map );
+  }
+  </script>
+</section>
+<!-- Footer -->
+<footer class="text-center">
+  <p>A <b>Revista Latinoamericana de Estudantes de Geografia (RELEG)</b> é uma publicação anual editada pela <b>Asociación Latinoamericana de Estudiantes de Geografia</b> desde 2009, <a href="https://releg.org">https://releg.org</a>, <a href="mailto:revista.releg@gmail.com">revista.releg@gmail.com</a>. ISSN (Chile): 0718-770X. Ver registro en: <a href="https://portal.issn.org/resource/ISSN/0718-770X#">https://portal.issn.org/resource/ISSN/0718-770X#</a></p>
+  <p>O conteúdo da RELEG, salvo indicação contrária, está sujeito a uma <a href="https://creativecommons.org/licenses/by/4.0/deed.es">licencia Creative Commons Reconocimiento 4.0 Internacional</a>. 
+</p>
+  <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Contenido Open Access" src="img/open-access.svg"></a> <a href="https://validator.w3.org/check/referer" target="_blank"><img src="img/w3c-html5.svg" alt="¡HTML5 Válido!"></a> <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank"><img src="img/w3c-css.svg" alt="¡CSS Válido!"></a></p> 
+  <a class="fa fa-facebook fa-lg" href="https://facebook.com/revista.releg" target="_blank"></a> <a class="fa fa-twitter fa-lg" href="https://twitter.com/revista_releg" target="_blank"></a> <a class="fa fa-github fa-lg" href="https://github.com/releg" target="_blank"></a>
+</footer>
+</body>
+</html>
