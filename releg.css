@@ -31,8 +31,8 @@ a:hover { color:#777; text-decoration:none }
 .archivo { margin-bottom:13rem }
 .buscar { text-align:center }
 
-.volumen a { color:inherit; text-decoration:none }
-.volumen a:hover { color:#777;  }
+.volumen a { color:#231f20; text-decoration:none }
+.volumen a:hover { color:#fff;  }
 .volumen {background-color: #d1c2d6; color: #fff; padding: 20px;}
 .volumen h3 { font-size:1.4rem; color: #fff; }
 .volumen h2 { font-size:1.4rem; color: #231f20; }
