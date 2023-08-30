@@ -39,11 +39,11 @@ a:hover { color:#777; text-decoration:none }
 .volumen p { font-size:1rem; text-align:justify; margin-bottom:.1rem }
 .volumen table tr {margin-bottom: 10px;}
 .volumen table {border-spacing: 10px;}
-.volumen .num-indice {color: #875f93; font-size: 20pt; vertical-align: top; text-align: right;}
+.volumen .num-indice {color: #612c71; font-size: 20pt; vertical-align: top; text-align: right;}
 .volumen .titulo-categoria {color: #231f20; font-size: 11pt;}
-.volumen .titulo-subindice {color: #fff;}
+.volumen .titulo-subindice {color: #282425;}
 .volumen .titulo-indice {color: #231f20;}
-.volumen .autor-indice {color: #4d4a4d; font-size: 10pt; padding-left: 20px;}
+.volumen .autor-indice {color: #282425; font-size: 10pt; padding-left: 20px;}
 
 span.sumTitulo { display:block; max-width:85%; font-weight:bold; color:#9bc43f }
 span.sumAutor { display:block; max-width:75%; padding-left:1rem }
