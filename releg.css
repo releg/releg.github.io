@@ -35,7 +35,7 @@ a:hover { color:#777; text-decoration:none }
 .volumen a:hover { color:#777;  }
 .volumen {background-color: #d1c2d6; color: #fff; padding: 20px;}
 .volumen h3 { font-size:1.4rem; color: #fff; }
-.volumen h2 { font-size:1.4rem; color: #fff; }
+.volumen h2 { font-size:1.4rem; color: #231f20; }
 .volumen p { font-size:1rem; text-align:justify; margin-bottom:.1rem }
 .volumen table tr {margin-bottom: 10px;}
 .volumen table {border-spacing: 10px;}
