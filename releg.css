@@ -33,17 +33,17 @@ a:hover { color:#777; text-decoration:none }
 
 .volumen a { color:inherit; text-decoration:none }
 .volumen a:hover { color:#777;  }
-.volumen {background-color: #151702; color: #fff; padding: 20px;}
+.volumen {background-color: #d1c2d6; color: #fff; padding: 20px;}
 .volumen h3 { font-size:1.4rem; color: #fff; }
 .volumen h2 { font-size:1.4rem; color: #fff; }
 .volumen p { font-size:1rem; text-align:justify; margin-bottom:.1rem }
 .volumen table tr {margin-bottom: 10px;}
 .volumen table {border-spacing: 10px;}
-.volumen .num-indice {color: #fff; font-size: 20pt; vertical-align: top; text-align: right;}
-.volumen .titulo-categoria {color: #8ac7ac; font-size: 11pt;}
+.volumen .num-indice {color: #875f93; font-size: 20pt; vertical-align: top; text-align: right;}
+.volumen .titulo-categoria {color: #231f20; font-size: 11pt;}
 .volumen .titulo-subindice {color: #fff;}
-.volumen .titulo-indice {color: #9bc43f;}
-.volumen .autor-indice {font-size: 10pt; padding-left: 20px;}
+.volumen .titulo-indice {color: #231f20;}
+.volumen .autor-indice {color: #4d4a4d; font-size: 10pt; padding-left: 20px;}
 
 span.sumTitulo { display:block; max-width:85%; font-weight:bold; color:#9bc43f }
 span.sumAutor { display:block; max-width:75%; padding-left:1rem }
